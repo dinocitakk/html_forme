@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izvod iz Matične knjige rođenih</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fffaf0;
+        }
+        h4, h2 {
+            margin: 0;
+        }
+        h4 {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            width: 250px;
+            text-align: right;
+            margin: 5px;
+        }
+        input {
+            margin: 5px;
+            width: 250px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin: 0 auto;
+        }
+        .section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #ffffff;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .note {
+            font-size: 12px;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .footer-label {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <h4>BOSNA I HERCEGOVINA<br>FEDERACIJA BOSNE I HERCEGOVINE</h4>
+
+    <form>
+        <label>KANTON:</label><input type="text" value="KANTON"> <br>
+        <label>OPĆINA/GRAD:</label><input type="text" value="OPĆINA/GRAD">
+    </form>
+
+    <h2>IZVOD IZ MATIČNE KNJIGE ROĐENIH</h2>
+
+    <form>
+        <div class="section">
+            <label>Prezime</label> <input type="text" value="Prezime">
+            <label>Spol</label> <input type="text" value="Spol"> <br>
+            <label>Ime</label> <input type="text" value="Ime"> <br>
+            <label>Datum i vrijeme rođenja</label> <input type="text" value="dd.mm.gggg. u hh:mm"> <br>
+            <label>Mjesto i općina rođenja</label> <input type="text" value="Mjesto, općina"> <br>
+            <label>Država rođenja</label> <input type="text" value="Država"> <br>
+            <label>JMBG</label> <input type="text" value="Jedinstveni matični broj"> <br>
+            <label>Državljanstvo</label> <input type="text" value="Državljanstvo"> <br>
+            <label>Nacionalnost</label> <input type="text" value="Nacionalnost"> <br>
+            <label>Prebivalište</label> <input type="text" value="Adresa">
+        </div>
+
+        <div class="section">
+            <p class="section-title">Podaci o roditeljima</p>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <th style="padding-right: 40px;">Otac</th>
+                    <th>Majka</th>
+                </tr>
+                <tr>
+                    <td><label>Prezime</label> <input type="text" value="Prezime oca"></td>
+                    <td><input type="text" value="Prezime majke"></td>
+                </tr>
+                <tr>
+                    <td><label>Ime</label> <input type="text" value="Ime oca"></td>
+                    <td><input type="text" value="Ime majke"></td>
+                </tr>
+                <tr>
+                    <td><label>Djevojačko prezime majke</label> <input type="text" value="Djevojačko prezime"></td>
+                    <td><input type="text" value="Djevojačko prezime"></td>
+                </tr>
+                <tr>
+                    <td><label>JMBG</label> <input type="text" value="JMBG oca"></td>
+                    <td><input type="text" value="JMBG majke"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="note">
+            <p><strong>Napomena:</strong> Ovaj izvod iz matične knjige rođenih nema ograničen rok važenja.<br>
+            Odgovornost za tačnost podataka snosi lice koje koristi izvod u pravne svrhe.</p>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <label class="footer-label">Broj:</label> <input type="text" value="Broj"> <br>
+            <label class="footer-label">Datum:</label> <input type="text" value="Datum"> <br>
+            <label class="footer-label">Matičar:</label> <input type="text" value="Ime matičara"> <br>
+        </div>
+
+        <input type="submit" value="Potvrdi">
+    </form>
+
+</body>
+</html>
+
